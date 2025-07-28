@@ -46,4 +46,32 @@ python autograder.py -q q2  # Test Minimax Agent
 python autograder.py -q q3  # Test Alpha-Beta Agent
 python autograder.py -q q4  # Test Expectimax Agent
 python autograder.py -q q5  # Test Better Evaluation Function
+
 Use --no-graphics for faster execution:
+python autograder.py -q q2 --no-graphics
+```
+
+# 🏁 How to Run Pacman
+
+## ▶️ Play Manually
+
+```bash
+python pacman.py
+```
+
+## 🧠 Play with a Custom Agent
+```bash
+python pacman.py -p ReflexAgent
+python pacman.py -p MinimaxAgent -a depth=3
+python pacman.py -p AlphaBetaAgent -a depth=3
+python pacman.py -p ExpectimaxAgent -a depth=3
+```
+
+## 🧪 Use Test Layouts
+```bash
+python pacman.py -p ReflexAgent -l testClassic
+python pacman.py -p MinimaxAgent -l minimaxClassic -a depth=2
+```
+
+## 📜 License
+This project was completed as part of a university assignment and is intended for educational and academic purposes only.
